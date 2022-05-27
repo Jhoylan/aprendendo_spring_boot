@@ -1,0 +1,72 @@
+REST_API:
+  projetos:
+    hello_world:
+      escopo:
+        exibir um Hello World! no navegador
+      requisitos:
+        controlador com método GET
+    calculadora:
+      escopo:
+        criar uma api que efetue operações matemáticas
+      requisitos:
+        controladores com método POST
+        lançamento e tratamento de exceções
+        testes unitários de 100% do código, incluindo situações que podem acarretar erros
+    contador de palavras:
+      escopo: 
+        receber um texto e contar quantas vezes cada palavras se repete
+      requisitos:
+        controladores com todos os métodos HTTP
+        lançamento e tratamento de exceções
+        testes unitários de 100% do código, incluindo situações que podem acarretar erros
+        limitar requisições (100/min do mesmo IP)
+    blog:
+      escopo:    
+        fazer um CRUD de posts
+      requisitos:
+        controladores com todos os métodos HTTP
+        lançamento e tratamento de exceções
+        testes unitários de 100% do código, incluindo situações que podem acarretar erros
+        limitar requisições (100/min do mesmo IP)
+        comunicação com o banco de dados
+    gerenciador de finanças:
+      escopo:
+        o usuário pode fazer um CRUD de fluxos de transações
+      requisitos:
+        controladores com todos os métodos HTTP
+        lançamento e tratamento de exceções
+        testes unitários de 100% do código, incluindo situações que podem acarretar erros
+        limitar requisições (100/min do mesmo IP)
+        comunicação com o banco de dados
+        variável de ambiente
+        chave de api (permitir apenas requisições com a chave correta)
+    galeria:
+      escopo:
+        o usuário pode fazer um CRUD de fotos e vídeos
+      requisitos:
+        controladores com todos os métodos HTTP
+        lançamento e tratamento de exceções
+        testes unitários de 100% do código, incluindo situações que podem acarretar erros
+        limitar requisições (100/min do mesmo IP)
+        comunicação com o banco de dados
+        variável de ambiente
+        chave de api (permitir apenas requisições com a chave correta)
+        limite de tamanho de arquivo aceito (apenas permitir requisições abaixo de um limite x de dados)
+        versionamento (semantic versioning pode ser uma opção)
+        documentação (documentar a estrutura da requisição, restrições, exceções, etc.)
+    super bloco de anotações:
+      escopo:
+        o usuário pode fazer um CRUD de arquivos (fotos, vídeos, texto, PDFs, GIFs e etc.)
+      requisitos:
+        controladores com todos os métodos HTTP
+        lançamento e tratamento de exceções
+        testes unitários de 100% do código, incluindo situações que podem acarretar erros
+        limitar requisições (100/min do mesmo IP)
+        comunicação com o banco de dados (em desenvolvimento e em produção)
+        variável de ambiente
+        chave de api (permitir apenas requisições com a chave correta)
+        limite de tamanho de arquivo aceito (apenas permitir requisições abaixo de um limite x de dados)
+        versionamento (semantic versioning pode ser uma opção)
+        documentação (documentar a estrutura da requisição, restrições, exceções, etc.)
+        deploy automático (linkar o repositório a um servidor para fazer deploy automático)
+        git flow (development, staging, master)
