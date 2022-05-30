@@ -9,17 +9,27 @@ REST_API:
       escopo:
         criar uma api que efetue operações matemáticas
       requisitos:
-        controladores com método POST
+        controladores com método GET
         lançamento e tratamento de exceções
         testes unitários de 100% do código, incluindo situações que podem acarretar erros
     contador de palavras:
       escopo: 
         receber um texto e contar quantas vezes cada palavras se repete
       requisitos:
-        controladores com todos os métodos HTTP
+        controlador com método GET
         lançamento e tratamento de exceções
         testes unitários de 100% do código, incluindo situações que podem acarretar erros
         limitar requisições (100/min do mesmo IP)
+    repositorio de artigos:
+      escopo: 
+        armazenar artigos salvos com H2 e JPA e disponibilizar esses recursos
+      requisitos:
+        controlador com método GET
+        lançamento e tratamento de exceções
+        testes unitários de 100% do código, incluindo situações que podem acarretar erros
+        limitar requisições (100/min do mesmo IP)
+        comunicação com banco de dados (H2)
+        JPA
     blog:
       escopo:    
         fazer um CRUD de posts
