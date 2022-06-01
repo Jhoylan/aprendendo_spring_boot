@@ -25,9 +25,17 @@ REST_API:
         armazenar artigos salvos com H2 e JPA e disponibilizar esses recursos
       requisitos:
         controlador com método GET
+        comunicação com banco de dados (H2)
+        JPA
+    importador de artigos:
+      escopo:
+        importar artigos do repositório de artigos, salvar na memória e disponibilizar o título e author dos artigos salvos
+        PS. se o artigo tiver título nulo, o título da história deve ser o título
+        PS.2. se o título e o título da história forem nulos o arquivo não deve ser armazenado
+      requisitos:
+        controlador com método POST
         lançamento e tratamento de exceções
         testes unitários de 100% do código, incluindo situações que podem acarretar erros
-        limitar requisições (100/min do mesmo IP)
         comunicação com banco de dados (H2)
         JPA
     blog:
