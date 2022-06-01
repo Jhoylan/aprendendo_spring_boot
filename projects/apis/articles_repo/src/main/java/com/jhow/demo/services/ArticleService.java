@@ -36,6 +36,8 @@ public class ArticleService implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
+        articleRepository.deleteAll();
+
         LOGGER.log(Level.INFO, "Persist");
         var foo_article_1 = new Article("foo_title_1", "http://localhost:8080/articles?author=foo_author_1",
                 "foo_author_1", 1, "foo_story_title", "foo_story_url");
@@ -77,5 +79,46 @@ public class ArticleService implements ApplicationRunner {
                 "foo_author_2", 7, "foo_story_title", "foo_story_url");
         articleRepository.save(foo_article_7);
         LOGGER.log(Level.INFO, foo_article_7.toString());
+
+        LOGGER.log(Level.INFO, "Persist");
+        var foo_article_8 = new Article(null, "http://localhost:8080/articles?author=foo_author_3",
+                "foo_author_3", 7, "foo_story_title", "foo_story_url");
+        articleRepository.save(foo_article_8);
+        LOGGER.log(Level.INFO, foo_article_8.toString());
+
+        LOGGER.log(Level.INFO, "Persist");
+        var foo_article_9 = new Article(null, "http://localhost:8080/articles?author=foo_author_3",
+                "foo_author_3", 7, "foo_story_title", "foo_story_url");
+        articleRepository.save(foo_article_9);
+        LOGGER.log(Level.INFO, foo_article_9.toString());
+
+        LOGGER.log(Level.INFO, "Persist");
+        var foo_article_10 = new Article(null, "http://localhost:8080/articles?author=foo_author_3",
+                "foo_author_3", 7, "foo_story_title", "foo_story_url");
+        articleRepository.save(foo_article_10);
+        LOGGER.log(Level.INFO, foo_article_10.toString());
+
+        LOGGER.log(Level.INFO, "Persist");
+        var foo_article_11 = new Article(null, "http://localhost:8080/articles?author=foo_author_3",
+                "foo_author_3", 7, null, "foo_story_url");
+        articleRepository.save(foo_article_11);
+        LOGGER.log(Level.INFO, foo_article_11.toString());
+
+        LOGGER.log(Level.INFO, "Persist");
+        var foo_article_12 = new Article(null, "http://localhost:8080/articles?author=foo_author_3",
+                "foo_author_3", 7, null, "foo_story_url");
+        articleRepository.save(foo_article_12);
+        LOGGER.log(Level.INFO, foo_article_12.toString());
+
+        LOGGER.log(Level.INFO, "Persist");
+        var foo_article_13 = new Article(null, "http://localhost:8080/articles?author=foo_author_3",
+                "foo_author_3", 7, null, "foo_story_url");
+        articleRepository.save(foo_article_13);
+        LOGGER.log(Level.INFO, foo_article_13.toString());
+
+        var foo_article_14 = new Article("foo_title_14", "http://localhost:8080/articles?author=foo_author_3",
+                "foo_author_3", 7, null, "foo_story_url");
+        articleRepository.save(foo_article_14);
+        LOGGER.log(Level.INFO, foo_article_14.toString());
     }
 }
